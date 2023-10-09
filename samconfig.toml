@@ -1,0 +1,28 @@
+# More information about the configuration file can be found here:
+# https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html
+version = 0.1
+
+[default]
+[default.global.parameters]
+stack_name = "GSpread"
+
+[default.build.parameters]
+parallel = true
+
+[default.validate.parameters]
+lint = true
+
+[default.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = false
+deployment_preference = "AllAtOnce"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1791i8wutuxan"
+resolve_s3 = true
+s3_prefix = "GSpread"
+region = "us-east-1"
+image_repositories = ["GoogleDeposit=670181324081.dkr.ecr.us-east-1.amazonaws.com/gspreadde95fa5e/googledeposit51864ca0repo"]
+
+
+
+[default.package.parameters]
+template_file = "template.yaml"
