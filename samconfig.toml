@@ -14,7 +14,7 @@ lint = true
 
 [default.deploy.parameters]
 capabilities = "CAPABILITY_IAM"
-confirm_changeset = false
+confirm_changeset = true
 deployment_preference = "AllAtOnce"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1791i8wutuxan"
 resolve_s3 = true
